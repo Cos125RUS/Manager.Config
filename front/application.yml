@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          clients:
+            url: http://localhost:8765/clients
+          catalog:
+            url: http://localhost:8765/catalog
+          storage:
+            url: http://localhost:8765/storage
+
+api:
+  basic-uri:
+    clients: http://localhost:8765/clients/
+    catalog: http://localhost:8765/catalog/
+    storage: http://localhost:8765/storage/
+
+# tmpVar: configServer
