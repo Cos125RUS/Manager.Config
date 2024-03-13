@@ -14,3 +14,7 @@ spring:
           uri: http://localhost:8083/
           predicates:
             - Path=/storage/**
+        - id: documents
+          uri: http://localhost:8084/
+          predicates:
+            - Path=/documents/**
