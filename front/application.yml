@@ -9,11 +9,14 @@ spring:
             url: http://localhost:8765/catalog
           storage:
             url: http://localhost:8765/storage
+          documents:
+            url: http://localhost:8765/documents
 
 api:
   basic-uri:
     clients: http://localhost:8765/clients/
     catalog: http://localhost:8765/catalog/
     storage: http://localhost:8765/storage/
+    documents: http://localhost:8765/documents/
 
 # tmpVar: configServer
