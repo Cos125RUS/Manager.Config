@@ -1,0 +1,3 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:54324/documents_db
