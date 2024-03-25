@@ -18,3 +18,8 @@ spring:
           uri: http://localhost:8084/
           predicates:
             - Path=/documents/**
+
+        - id: processor
+          uri: http://localhost:8090/
+          predicates:
+            - Path=/processor/**
