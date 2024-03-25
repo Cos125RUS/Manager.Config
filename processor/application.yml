@@ -11,9 +11,6 @@ spring:
             url: http://localhost:8765/storage
           documents:
             url: http://localhost:8765/documents
-            
-          processor:
-            url: http://localhost:8765/processor
 
 api:
   basic-uri:
@@ -21,7 +18,5 @@ api:
     catalog: http://localhost:8765/catalog/
     storage: http://localhost:8765/storage/
     documents: http://localhost:8765/documents/
-
-    processor: http://localhost:8765/processor/
 
 # tmpVar: configServer
