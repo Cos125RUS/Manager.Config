@@ -18,7 +18,10 @@ spring:
           uri: http://localhost:8084/
           predicates:
             - Path=/documents/**
-
+        - id: nomenclature
+          uri: http://localhost:8085/
+          predicates:
+            - Path=/nomenclature/**
         - id: processor
           uri: http://localhost:8090/
           predicates:
