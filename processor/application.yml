@@ -13,6 +13,8 @@ spring:
             url: http://localhost:8765/documents
           nomenclature:
             url: http://localhost:8765/nomenclature
+          transportation:
+            url: http://localhost:8765/transportation
 
 api:
   basic-uri:
@@ -21,5 +23,6 @@ api:
     storage: http://localhost:8765/storage/
     documents: http://localhost:8765/documents/
     nomenclature: http://localhost:8765/nomenclature/
+    transportation: http://localhost:8765/transportation/
 
 # tmpVar: configServer
