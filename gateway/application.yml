@@ -26,6 +26,10 @@ spring:
           uri: http://localhost:8086/
           predicates:
             - Path=/transportation/**
+        - id: users
+          uri: http://localhost:8087/
+          predicates:
+            - Path=/users/**
         - id: processor
           uri: http://localhost:8090/
           predicates:
