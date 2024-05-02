@@ -17,6 +17,12 @@ spring:
             url: http://localhost:8765/transportation
           processor:
             url: http://localhost:8765/processor
+security:
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-url: http://localhost:9090/realms/master
+        # jwk-set-uri: http://localhost:9090/realms/master/protocol/openid-connect/certs
 
 api:
   basic-uri:
@@ -27,12 +33,5 @@ api:
     nomenclature: http://localhost:8765/nomenclature/
     transportation: http://localhost:8765/transportation/
     processor: http://localhost:8765/processor/
-
-security:
-  oauth2:
-    resourceserver:
-      jwt:
-        issuer-url: http://localhost:9090/realms/master
-        # jwk-set-uri: http://localhost:9090/realms/master/protocol/openid-connect/certs
 
 # tmpVar: configServer
