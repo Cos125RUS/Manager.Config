@@ -34,3 +34,8 @@ spring:
           uri: http://localhost:8090/
           predicates:
             - Path=/processor/**
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
