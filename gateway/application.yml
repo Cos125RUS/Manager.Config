@@ -4,41 +4,45 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: clients
-          uri: http://localhost:8081/
-          predicates:
-            - Path=/clients/**
-        - id: catalog
-          uri: http://localhost:8082/
-          predicates:
-            - Path=/catalog/**
-        - id: storage
-          uri: http://localhost:8083/
-          predicates:
-            - Path=/storage/**
-        - id: documents
-          uri: http://localhost:8084/
-          predicates:
-            - Path=/documents/**
-        - id: nomenclature
-          uri: http://localhost:8085/
-          predicates:
-            - Path=/nomenclature/**
-        - id: transportation
-          uri: http://localhost:8086/
-          predicates:
-            - Path=/transportation/**
-        - id: users
-          uri: http://localhost:8087/
-          predicates:
-            - Path=/users/**
-        - id: processor
-          uri: http://localhost:8090/
-          predicates:
-            - Path=/processor/**
+        # routes:
+        #   - id: account-service-route
+        #     uri: lb://account-service
+        #     # predicates:
+        #     #   - Path=/account/**
+      # routes:
+      #   - id: clients
+      #     uri: http://localhost:8081/
+      #     predicates:
+      #       - Path=/clients/**
+      #   - id: catalog
+      #     uri: http://localhost:8082/
+      #     predicates:
+      #       - Path=/catalog/**
+      #   - id: storage
+      #     uri: http://localhost:8083/
+      #     predicates:
+      #       - Path=/storage/**
+      #   - id: documents
+      #     uri: http://localhost:8084/
+      #     predicates:
+      #       - Path=/documents/**
+      #   - id: nomenclature
+      #     uri: http://localhost:8085/
+      #     predicates:
+      #       - Path=/nomenclature/**
+      #   - id: transportation
+      #     uri: http://localhost:8086/
+      #     predicates:
+      #       - Path=/transportation/**
+      #   - id: users
+      #     uri: http://localhost:8087/
+      #     predicates:
+      #       - Path=/users/**
+      #   - id: processor
+      #     uri: http://localhost:8090/
+      #     predicates:
+      #       - Path=/processor/**
 
-# management:
-#   endpoint:
-#     gateway:
-#       enabled: true
+eureka:
+  client:
+    register-with-eureka: false
