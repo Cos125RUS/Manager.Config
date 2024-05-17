@@ -4,11 +4,10 @@ spring:
       discovery:
         locator:
           enabled: true
-        # routes:
-        #   - id: account-service-route
-        #     uri: lb://account-service
-        #     # predicates:
-        #     #   - Path=/account/**
+          predicates:
+            - name: Path
+              args:
+                pattern: "'/'+ serviceId +'/**'"
       # routes:
       #   - id: clients
       #     uri: http://localhost:8081/
