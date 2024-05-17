@@ -1,6 +1,9 @@
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: clients
           uri: http://localhost:8081/
@@ -35,7 +38,7 @@ spring:
           predicates:
             - Path=/processor/**
 
-management:
-  endpoint:
-    gateway:
-      enabled: true
+# management:
+#   endpoint:
+#     gateway:
+#       enabled: true
